@@ -12,7 +12,7 @@ d3 = {'d3c': 2, 'd3d': 4}
 
 # Boost Security:
 # resul i want:
-{'d1a': 2, 'd1b': 4, 'd2a': 4, 'd2b': 6, 'd3c': 4, 'd3d': 8}
+a = {'d1a': 2, 'd1b': 4, 'd2a': 4, 'd2b': 6, 'd3c': 4, 'd3d': 8}
 
 
 # React: virtualenv
