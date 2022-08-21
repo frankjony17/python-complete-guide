@@ -29,15 +29,11 @@ my_dict = dict([(1, 'apple'), (2, 'ball')])  # {1: 'apple', 2: 'ball'}
 # get vs [] for retrieving elements
 my_dict = {'name': 'Jack', 'age': 26}
 
-# Output: Jack
-print(my_dict['name'])
-
-# Output: 26
-print(my_dict.get('age'))
+print(my_dict['name'])  # Jack
+print(my_dict.get('age'))  # 26
 
 # Trying to access keys which doesn't exist throws error
-# Output None
-print(my_dict.get('address'))
+print(my_dict.get('address'))  # None
 
 # KeyError
 print(my_dict['address'])  # KeyError: 'address'
@@ -49,41 +45,79 @@ my_dict = {'name': 'Jack', 'age': 26}
 
 # update value
 my_dict['age'] = 27
-
 print(my_dict)  # {'age': 27, 'name': 'Jack'}
 
 # add item
 my_dict['address'] = 'Downtown'
-
 print(my_dict)  # {'address': 'Downtown', 'age': 27, 'name': 'Jack'}
 
 
-""" Removing elements from Dictionary -------------------------------------------------------------------------------"""
+""" Removing elements from Dictionary -- pop -- popitem -- clear -- del -- pop -- popitem -- clear -- del -- pop ----"""
 # create a dictionary
 squares = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
-# remove a particular item, returns its value
-print(squares.pop(4))  # Output: 16
+""" Remove a particular item, returns its value """
+print(squares.pop(4))  # 16
+print(squares)  # {1: 1, 2: 4, 3: 9, 5: 25}
 
-print(squares)  # Output: {1: 1, 2: 4, 3: 9, 5: 25}
-
-# remove an arbitrary item, return (key,value)
-print(squares.popitem())  # Output: (5, 25)
-
+""" Removes and returns the last element (key,value) """
+print(squares.popitem())  # (5, 25)
 print(squares)  # Output: {1: 1, 2: 4, 3: 9}
 
-# remove all items
+""" Remove all items """
 squares.clear()
+print(squares)  # {}
 
-# Output: {}
-print(squares)
-
-# delete the dictionary itself
+""" Delete the dictionary itself """
 del squares
 
 # Throws Error
 # print(squares)  # NameError: name 'squares' is not defined
 
+""" -- setdefault -- setdefault -- setdefault -- setdefault -- setdefault -- setdefault -- setdefault -- setdefault ----
+    
+    The setdefault() method returns the value of a key (if the key is in dictionary). 
+    If not, it inserts key with a value to the dictionary.
+    
+    Dictionary setdefault()
+        -> dict.setdefault(key[, default_value])
+    
+    setdefault() Parameters:
+        -> key - the key to be searched in the dictionary
+        -> default_value (optional) - key with a value default_value is inserted to the dictionary 
+                                      if the key is not in the dictionary.
+           
+    If not provided, the default_value will be None.
+    
+    Return Value from setdefault():
+        -> value of the key if it is in the dictionary
+        -> None if the key is not in the dictionary and default_value is not specified
+        -> default_value if key is not in the dictionary and default_value is specified
+
+"""
+
+""" Example 1: How setdefault() works when key is in the dictionary? """
+person = {'name': 'Phill', 'age': 22}
+
+age = person.setdefault('age')
+
+print('person = ', person)  # person =  {'name': 'Phill', 'age': 22}
+print('Age = ', age)  # Age = 22
+
+
+""" Example 2: How setdefault() works when key is not in the dictionary? """
+person = {'name': 'Phill'}
+
+# key is not in the dictionary
+salary = person.setdefault('salary')
+
+print('person = ', person)  # person =  {'name': 'Phill', 'salary': None}
+print('salary = ', salary)  # salary =  None
+
+# key is not in the dictionary, default_value is provided
+age = person.setdefault('age', 22)
+print('person = ', person)  # person =  {'name': 'Phill', 'age': 22, 'salary': None}
+print('age = ', age)  # age =  22
 
 """
     Python Dictionary Methods
