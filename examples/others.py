@@ -49,7 +49,5 @@ print(dictionary_2)  # {'d1a': 2, 'd1b': 4, 'd2a': 4, 'd2b': 6, 'd3c': 4, 'd3d':
 
 
 # python grafql
-# python enum
-# python with
 # python Generators: yield
 # Python statement.
