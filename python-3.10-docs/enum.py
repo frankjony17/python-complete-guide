@@ -1,4 +1,5 @@
 # https://www.pythontutorial.net/python-oop/python-enum-unique/
+from enum import Enum, unique
 
 # 1 --------------------------------------------------------------------------------------------------------------------
 """
@@ -7,7 +8,6 @@
 
     For example, the following defines the Color enumeration:
 """
-from enum import Enum
 
 
 class Color(Enum):
@@ -64,11 +64,10 @@ pprint(Color.__members__)
     To define an enumeration with no aliases, you can carefully use unique values for the members.
     For example:
 """
-import enum
 
 
-@enum.unique
-class Day(enum.Enum):
+@unique
+class Day(Enum):
     MON = 'Monday'
     TUE = 'Monday'
     WED = 'Wednesday'
