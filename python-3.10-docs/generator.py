@@ -218,4 +218,7 @@ def square(nums):
         yield num**2
 
 
-print(sum(square(fibonacci_numbers(10))))  # 4895
+for num in fibonacci_numbers(10):
+    print(num)
+
+# print(sum(square(fibonacci_numbers(10))))  # 4895

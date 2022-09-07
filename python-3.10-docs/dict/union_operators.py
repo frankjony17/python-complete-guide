@@ -33,8 +33,8 @@ print(dict_4)  # {'d1a': 1, 'd1b': 2, 'd2a': 2, 'd2b': 3, 'd3c': 2, 'd3d': 4}
 """
 from collections import ChainMap
 
-dict_1 = {'a': 1,'b': 2}
-dict_2 = {'c': 3,'b': 9999}
+dict_1 = {'a': 1, 'b': 2}
+dict_2 = {'c': 3, 'b': 9999}
 
 dict_3 = ChainMap(dict_1, dict_2)
 

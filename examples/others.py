@@ -38,6 +38,20 @@ print(dictionary_2)  # {'d1a': 2, 'd1b': 4, 'd2a': 4, 'd2b': 6, 'd3c': 4, 'd3d':
 
 """ Dictionary Comprehensions and merge dict with Union Operator"""
 
+# ----------------------------------------------------------------------------------------------------------------------
+
+""" Example 3
+    Fibonacci Sequence
+"""
+
+
+def fibonacci_numbers(nums):
+    x, y = 0, 1
+    for _ in range(nums):
+        x, y = y, x + y
+        yield x
+
+# ----------------------------------------------------------------------------------------------------------------------
 
 # React: virtualenv
 # Docker: run, cmd
@@ -46,8 +60,28 @@ print(dictionary_2)  # {'d1a': 2, 'd1b': 4, 'd2a': 4, 'd2b': 6, 'd3c': 4, 'd3d':
 # or get the data from the database whith the id?
 # alembic: migration how add new column and dta for this column
 # redoc: perhaps react -> redoc
-
-
 # python grafql
-# python Generators: yield
 # Python statement.
+
+
+"""
+    Basic python data structure:
+        https://realpython.com/python-data-structures/#dictionaries-maps-and-hash-tables
+        https://docs.python.org/3/library/collections.html?highlight=collections#module-collections
+   
+    create a widget for a dashboard thats run on docker using react in frontend and django in backend
+    React and Django   
+    make a dashboard with react and django
+    React + Python coding challenge
+    
+    Flatten it to the given specifications:
+        https://www.programiz.com/python-programming/examples/flatten-nested-list
+    
+  
+    What kind of software development are you interested in working on?
+    
+    Create a function that flattens a nested dictionary
+    
+    JUnit test cases
+"""
+
