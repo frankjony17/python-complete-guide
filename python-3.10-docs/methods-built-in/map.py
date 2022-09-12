@@ -16,7 +16,8 @@
             -> list() - to convert to list
             -> set() - to convert to a set, and so on.
 
-    The map() function applies a given function to each item of an iterable (list, tuple etc.) and returns an iterator.
+    The map() function applies a given function to each item of an iterable (list, tuple etc.)
+    and returns an iterator.
 
     Example:
 """
@@ -36,7 +37,7 @@ squared_numbers = list(squared_numbers_iterator)
 print(squared_numbers)  # [4, 16, 36, 64, 100]
 
 
-""" Example 1: Working of map() -------------------------------------------------------------------------------------"""
+""" Example 1: Working of map() ----------------------------------------------------------------"""
 
 
 def calculate_square(n):
@@ -52,7 +53,7 @@ numbersSquare = set(result)
 print(numbersSquare)  # {16, 1, 4, 9}
 
 
-""" Example 2: How to use lambda function with map() ----------------------------------------------------------------"""
+""" Example 2: How to use lambda function with map() -------------------------------------------"""
 numbers = (1, 2, 3, 4)
 
 result = map(lambda x: x * x, numbers)
@@ -64,7 +65,7 @@ numbersSquare = set(result)
 print(numbersSquare)  # {16, 1, 4, 9}
 
 
-""" Example 3: Passing Multiple Iterators to map() Using Lambda -----------------------------------------------------"""
+""" Example 3: Passing Multiple Iterators to map() Using Lambda --------------------------------"""
 num1 = [4, 5, 6]
 num2 = [5, 6, 7]
 

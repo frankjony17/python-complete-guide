@@ -10,8 +10,12 @@ employees = [
     {'name': 'Mikhail Tal', 'age': 40, 'salary': 15000},
 ]
 # Return only one:
-employee_by_name = next((employee for employee in employees if employee["name"] == "John Hopkins"), None)
+employee_by_name = next((
+    employee for employee in employees if employee["name"] == "John Hopkins"), None)
+
 print(employee_by_name, end='\n\n')
+
+# ---------------------------------------
 
 # Return all matching values:
 employee_by_name = filter(lambda e: (e["name"] == "John Hopkins"), employees)

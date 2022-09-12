@@ -31,7 +31,7 @@ even_numbers = list(even_numbers_iterator)
 
 print(even_numbers)  # [2, 4, 6, 8, 10]
 
-""" Example 1: Working of filter() ----------------------------------------------------------------------------------"""
+"""Example 1: Working of filter() --------------------------------------------------------------"""
 letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 
 
@@ -47,7 +47,7 @@ filtered_vowels = filter(filter_vowels, letters)
 vowels = tuple(filtered_vowels)
 print(vowels)  # ('a', 'e', 'i', 'o')
 
-""" Example 2: Using Lambda Function Inside filter() ----------------------------------------------------------------"""
+""" Example 2: Using Lambda Function Inside filter() -------------------------------------------"""
 numbers = [1, 2, 3, 4, 5, 6, 7]
 
 # the lambda function returns True for even numbers
@@ -58,7 +58,7 @@ even_numbers = list(even_numbers_iterator)
 
 print(even_numbers)  # [2, 4, 6]
 
-""" Example 3: Using None as a Function Inside filter() -------------------------------------------------------------
+""" Example 3: Using None as a Function Inside filter() -------------------------------------------
     
     When None is used as the first argument to the filter() function,
     all elements that are truthy values (gives True if converted to boolean) are extracted.
