@@ -17,11 +17,13 @@ def for_function(false_assignments, source_list, words, i):
             false_assignments.append(source)
     return false_assignments
 
+
 def for_str(false_assignments, source_list, words, i):
     if 'str' in source_list[i] and source_list[i - 1] in ['return', 'class'] and 'str' == words:
         false_assignments.append(source_list[i][0:3])
 
     return false_assignments
+
 
 def for_error(source):
     try:

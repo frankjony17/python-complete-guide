@@ -76,6 +76,7 @@ def get_salary(employee):
 employees.sort(key=get_name)
 print(employees, end='\n\n')
 
+
 # sort by Age (Ascending order)
 employees.sort(key=get_age)
 print(employees, end='\n\n')
