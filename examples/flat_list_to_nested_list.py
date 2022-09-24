@@ -5,7 +5,7 @@
         [1, 2, 3, 10, 4, 5, 6, 7, 8, 9]
 """
 
-a = [[1, [[2], 3]], [10], [[[4], 5], 6], [7, [8], [9]]]
+_list = [[1, [[2], 3]], [10], [[[4], 5], 6], [7, [8], [9]]]
 
 
 def flat_list(item):
@@ -21,7 +21,16 @@ def flat_list(item):
     return _list
 
 
-print(flat_list(a))
+print(flat_list(_list))
 
-flat_list = [item for sublist in a for item in sublist]
-print(flat_list)
+
+""" Solution 2 """
+
+
+def flatten(_list):
+    return [
+        element for item in _list for element in flatten(item)] if type(_list) is list else [_list]
+
+
+print("Transformed List ", flatten(_list))
+
